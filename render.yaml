@@ -1,0 +1,74 @@
+# Blueprint — create 8 free web services (set repo in dashboard if needed)
+services:
+  - type: web
+    name: div-auth
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/01-auth-div-auth
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-user-link
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/02-link-div-user-link
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-scan-deep-a
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/03-deep-a-div-scan-deep-a
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-scan-deep-b
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/04-deep-b-div-scan-deep-b
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-scan-dark-a
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/05-dark-a-div-scan-dark-a
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-scan-dark-b
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/06-dark-b-div-scan-dark-b
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-ai-light
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/07-ai-light-div-ai-light
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+  - type: web
+    name: div-ai-heavy
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: servers/08-ai-heavy-div-ai-heavy
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
